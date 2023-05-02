@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+
+.loader-mask{
+	position:fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: $main_color;
+    z-index:999999999999;
+    .loader{
+        position:absolute;
+        width:230px;
+        height:140px;
+        left:50%;
+        top:50%;
+        transform:translateX(-50%) translateY(-50%);
+        background-image:url(../assets/image/foot_logo_new.png);
+        background-size:100%;
+        background-repeat:no-repeat;
+    }
+}
+
+
+main{
+    padding-top: 100px;
+    @include max-screen(991px){
+        padding-top: 60px;
+    }
+}
+
+h1, h2, h3, h4, p{
+    margin: 0;
+    padding: 0;
+    color: $black;
+}
+
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+img {
+    image-rendering: -webkit-optimize-contrast;
+    vertical-align: middle;
+}
+
+.container{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.content_box{
+    margin-top: -13%;
+    margin-bottom: 120px;
+    padding: 60px 0 100px;
+    background: #fff;
+    box-shadow: 0 10px 80px rgba(0, 0, 0, .1);
+    @include max-screen(767px){
+        padding: 60px 0;
+        margin-bottom: 60px;
+    }
+    .container{
+        @extend %clearfix;
+        .title_box{
+            float: left;
+            @include max-screen(767px){
+                float: none;
+            }
+        }
+    }
+}
+
+.side_icon{
+    position: fixed;
+    bottom: 110px;
+    right: 20px;
+    z-index: 1;
+    opacity: .9;
+    .link{
+        display: block;
+        position: relative;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+        @extend %link_hover;
+        &:hover{
+            transform: scale(1.1);
+        }
+        .image{
+            width: 100%;
+        }
+    }
+    
+}
+
+.gotop{
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background: #AFAFAF;
+    z-index: 9999;
+    cursor: pointer;
+    @extend %link_hover;
+    &:hover{
+        transform: scale(1.1);
+    }
+    &:before{
+        content: url('../assets/image/arrow.svg');
+        position: absolute;
+        top: 18px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+

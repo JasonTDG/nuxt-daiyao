@@ -1,0 +1,58 @@
+
+.btn{
+    position: relative;
+    background: transparent;
+    border: 1px solid $main_color;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 30px;
+    border-radius: 3px;
+    cursor: pointer;
+    @extend %link_hover;
+    &:before{
+        content: url(../../assets/image/btn_arrow.svg);
+        position: absolute;
+        top: 30%;
+        right: -20px;
+        width: 60px;
+        height: 15px;
+        // transform: translateY(-40%);
+        @extend %link_hover;
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right, #5D93CB, #1A4D82);
+        opacity: 0;
+        @extend %link_hover;
+    }
+    .link{
+        display: block;
+        padding: 17px 15px 17px 35px;
+        .text{
+            font-size: 15px;
+            font-weight: bold;
+            text-align: left;
+            letter-spacing: 2px;
+        }
+    }
+    &:hover{
+        border-color: $light_gray;
+        .link .text{
+            color: #fff;
+        }
+        &:before{
+            animation: 2s btn_arrow;
+            right: 30px;
+            filter: brightness(15);
+        }
+        &:after{
+            opacity: 1;
+        }
+    }
+}

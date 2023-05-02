@@ -1,0 +1,14 @@
+%clearfix {
+    &:before,
+    &:after {
+      content: " ";
+      display: table;
+    }
+    &:after {
+      clear: both;
+    }
+}
+
+%link_hover{
+  transition: ease .5s;
+}

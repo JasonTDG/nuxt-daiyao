@@ -1,0 +1,7 @@
+{
+    "about" : { "bannerClass" : "about_banner"},
+    "serviceList" : { "bannerClass" : "serviceList_banner" },
+    "work" : { "bannerClass" : "work_banner" },
+    "contact" : { "bannerClass" : "contact_banner" }
+    
+}

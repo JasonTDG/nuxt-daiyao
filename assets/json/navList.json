@@ -1,0 +1,9 @@
+{
+    "ListBox" : [
+        { "list" : "首頁" , "link" : "/"},
+        { "list" : "關於我們" , "link" : "/about"},
+        { "list" : "服務項目" , "link" : "/serviceList"},
+        { "list" : "工程展示" , "link" : "/work"},
+        { "list" : "聯絡我們", "link" : "/contact" }
+    ]
+}
