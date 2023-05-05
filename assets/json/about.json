@@ -5,13 +5,13 @@
         {
             "title": "鐵皮屋施工-簽約",
             "text": "唯有誠信和服務品質才能長久經營，我們非常重視與業主的溝通不論在外觀規劃或內部結構建置，免費到府丈量場刊給予適當建議，會詳細業主討論想法和預算並經雙方合意簽約完成後，再開始安排團隊進駐施工。",
-            "imgSrc": "_nuxt/assets/image/about1.jpg"
+            "imgSrc": "~/assets/image/about1.jpg"
         },
 
         {
             "title": "感謝大家支持",
             "text": "從事鐵皮屋工程多年，非常感謝眾多客戶的支持與轉介，我們將持續用熱誠的心、用專業的技術來完成每一次的託付!",
-            "imgSrc": "_nuxt/assets/image/about2.jpg"
+            "imgSrc": "~/assets/image/about2.jpg"
         }
     ]
     

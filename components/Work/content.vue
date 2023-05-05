@@ -6,34 +6,34 @@
             </div>
             <div class="grid container">
                 <div class="grid_item">
-                        <img class="image " src="../../assets/image/1.jpg">
+                        <img class="image " src="~/assets/image/1.jpg">
                 </div>
                 <div class="grid_item">
-                        <img class="image " src="../../assets/image/2.jpg">
+                        <img class="image " src="~/assets/image/2.jpg">
                 </div>
                 <div class="grid_item">
-                        <img class="image " src="../../assets/image/3.jpg">
+                        <img class="image " src="~/assets/image/3.jpg">
                 </div>
                 <div class="grid_item">
-                        <img class="image " src="../../assets/image/4.jpg">
+                        <img class="image " src="~/assets/image/4.jpg">
                 </div>
                 <div class="grid_item">
-                        <img class="image" src="../../assets/image/5.jpg">
+                        <img class="image" src="~/assets/image/5.jpg">
                 </div>
                 <div class="grid_item">
-                        <img class="image" src="../../assets/image/6.jpg">
+                        <img class="image" src="~/assets/image/6.jpg">
                 </div>
                 <div class="grid_item">
-                        <img class="image" src="../../assets/image/7.jpg">
+                        <img class="image" src="~/assets/image/7.jpg">
                 </div>
                 <div class="grid_item">
-                        <img class="image" src="../../assets/image/8.jpg">
+                        <img class="image" src="~/assets/image/8.jpg">
                 </div>
                 <div class="grid_item">
-                        <img class="image " src="../../assets/image/9.jpg">
+                        <img class="image " src="~/assets/image/9.jpg">
                 </div>
                 <div class="grid_item">
-                        <img class="image " src="../../assets/image/10.jpg">
+                        <img class="image " src="~/assets/image/10.jpg">
                 </div>
             </div>
         </div>

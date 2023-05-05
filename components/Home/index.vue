@@ -2,14 +2,14 @@
     <banner />
     <work />
     <service />
-    <map />
+    <googleMap />
 </template>
 
 <script setup>
     import banner from './banner.vue';
     import work from './work.vue';
     import service from './service.vue';
-    import map from './map.vue';
+    import googleMap from './map.vue';
 </script>
 
 <style lang="scss" scoped>

@@ -20,7 +20,7 @@
 
 <style lang="scss" scoped>
         .index_service {
-           background: url('../../assets/image//service_bg.jpg')no-repeat 50% 50%;
+           background: url('~/assets/image//service_bg.jpg')no-repeat 50% 50%;
            background-size: cover;
            padding: 60px 0 100px;
 
@@ -77,7 +77,7 @@
                        }
 
                        &:before {
-                           content: url('../../assets/image/dot.svg');
+                           content: url('~/assets/image/dot.svg');
                            position: absolute;
                            top: 0;
                            left: 0;

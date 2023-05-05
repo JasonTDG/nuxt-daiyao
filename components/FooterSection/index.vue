@@ -3,7 +3,7 @@
             <div class="footer_top">
             <div class="container">
                 <div class="logo_box">
-                    <img class="image lazy" src="../../assets/image/foot_logo.png">
+                    <img class="image lazy" src="~/assets/image/foot_logo.png">
                 </div>
                 <div class="text_box">
                     <p class="title">歡迎撥打專線，專人將為您服務。</p>
@@ -23,7 +23,7 @@
                     </ul>
                 </div>
                 <a class="qrcode" href="https://line.me/ti/p/eGdYQhJ6Kg" target="_blank">
-                    <img class="image" src="../../assets/image/line_qr.jpg">
+                    <img class="image" src="~/assets/image/line_qr.jpg">
                 </a>
             </div>
         </div>

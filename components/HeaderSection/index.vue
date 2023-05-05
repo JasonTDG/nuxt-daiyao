@@ -3,7 +3,7 @@
         <div class="nav">
             <div class="logo_box">
                 <NuxtLink class="link" to="/">
-                    <img class="image" src="../../assets/image/logo.png">
+                    <img class="image" src="~/assets/image/logo.png">
                 </NuxtLink>    
             </div>
             <div class="container">
@@ -30,7 +30,7 @@
 </template>
 
 <script setup>
-   import navList from '../../assets/json/navList.json'
+   import navList from '~/assets/json/navList.json'
 
    const burgerClick = () => {
         const burger = document.querySelector('.burger');

@@ -1,10 +1,10 @@
 <template>
     <div class="side_icon">
         <a class="link" :href="companyInfoData.numberLink">
-            <img class="image" src="../../assets/image/phone(circle).svg">
+            <img class="image" src="~/assets/image/phone(circle).svg">
         </a>
         <a class="link" :href="companyInfoData.lineLink" target="_blank">
-            <img class="image" src="../../assets/image/line.svg">
+            <img class="image" src="~/assets/image/line.svg">
         </a>
     </div>
     <span v-if="isBtnVisible" class="gotop" id="goTop" @click="goTopClick"></span>
@@ -75,7 +75,7 @@
             transform: scale(1.1);
         }
         &:before{
-            content: url('../../assets/image/arrow.svg');
+            content: url('~/assets/image/arrow.svg');
             position: absolute;
             top: 18px;
             left: 50%;
