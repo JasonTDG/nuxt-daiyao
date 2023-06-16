@@ -15,7 +15,7 @@
 </template>
 
 <script setup>
-    import serviceListData from '../../assets/json/serviceList.json'
+    import serviceListData from '~/assets/json/serviceList.json'
     import MainTitle from '../MainTitle/index.vue'
     import Breadcrumbs from '../Breadcrumbs/index.vue'
 </script>

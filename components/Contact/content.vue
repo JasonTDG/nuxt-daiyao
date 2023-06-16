@@ -14,16 +14,16 @@
                         <p class="title">如何找到我們</p>
                         <ul class="list_box">
                             <li class="list">
-                                <div class="image_box"><img class="image" src="~/assets/image/phone.svg"></div>
+                                <div class="image_box"><img class="image" src="/image/phone.svg"></div>
                                 <a class="number link" :href="companyInfoData.numberLink">{{ companyInfoData.number }}</a>
                                 <p class="name">陳先生</p>
                             </li>
                             <li class="list">
-                                <div class="image_box"><img class="image" src="~/assets/image/fax.svg"></div>
+                                <div class="image_box"><img class="image" src="/image/fax.svg"></div>
                                 <a class="number link" href="">{{ companyInfoData.fax }}</a>
                             </li>
                             <li class="list">
-                                <div class="image_box"><img class="image" src="~/assets/image/address.svg"></div>
+                                <div class="image_box"><img class="image" src="/image/address.svg"></div>
                                 <a class="link" :href="companyInfoData.addressLink">{{ companyInfoData.address }}</a>
                             </li>
                         </ul>
@@ -36,7 +36,7 @@
 </template>
 
 <script setup>
-    import companyInfoData from '../../assets/json/companyInfo.json'
+    import companyInfoData from '~/assets/json/companyInfo.json'
     import MainTitle from '../MainTitle/index.vue'
     import Breadcrumbs from '../Breadcrumbs/index.vue'
 </script>

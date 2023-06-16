@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-    import companyInfoData from '../../assets/json/companyInfo.json'
+    import companyInfoData from '~/assets/json/companyInfo.json'
 
     const isBtnVisible = ref(false);
 

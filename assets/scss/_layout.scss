@@ -17,7 +17,7 @@
         left:50%;
         top:50%;
         transform:translateX(-50%) translateY(-50%);
-        background-image:url(../assets/image/foot_logo_new.png);
+        background-image:url(/image/foot_logo_new.png);
         background-size:100%;
         background-repeat:no-repeat;
     }
@@ -126,7 +126,7 @@ img {
         transform: scale(1.1);
     }
     &:before{
-        content: url('../assets/image/arrow.svg');
+        content: url('/image/arrow.svg');
         position: absolute;
         top: 18px;
         left: 50%;

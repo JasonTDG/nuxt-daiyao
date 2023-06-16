@@ -10,7 +10,7 @@
     cursor: pointer;
     @extend %link_hover;
     &:before{
-        content: url(../../assets/image/btn_arrow.svg);
+        content: url(/image/btn_arrow.svg);
         position: absolute;
         top: 30%;
         right: -20px;

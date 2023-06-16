@@ -75,7 +75,7 @@
 
            .image_box {
                width: 50%;
-               background: url('~/assets/image/index_work.jpg')no-repeat 50% 50%;
+               background: url('/image/index_work.jpg')no-repeat 50% 50%;
                background-size: cover;
                min-height: 450px;
 

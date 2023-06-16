@@ -22,7 +22,7 @@
 </template>
 
 <script setup>
-    import aboutData from '../../assets/json/about.json'
+    import aboutData from '~/assets/json/about.json'
     import MainTitle from '../MainTitle/index.vue'
     import Breadcrumbs from '../Breadcrumbs/index.vue'
 </script>
