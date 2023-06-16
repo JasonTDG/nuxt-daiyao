@@ -51,7 +51,6 @@
                     @include max-screen(768px) {
                         font-size: 18px;
                         padding-right: 10px;
-                        // padding-bottom: 30px;
                     }
     
                     @include max-screen(600px) {
@@ -60,7 +59,7 @@
                     }
     
                     &:before {
-                        content: url('../../assets/image/dot.svg');
+                        content: url('/image/dot.svg');
                         position: absolute;
                         top: 0;
                         left: 0;

@@ -1,7 +1,7 @@
 <template>
         <div class="breadcrumb">
             <span class="list"><NuxtLink class="link" to="/">首頁</NuxtLink></span>
-            <span class="arrow"><img class="image" src="~/assets/image/arrow_right.svg"></span>
+            <span class="arrow"><img class="image" src="/image/arrow_right.svg"></span>
             <span class="list">{{ listProps.listName }}</span>
         </div>
 </template>

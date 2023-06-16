@@ -6,7 +6,6 @@
 </template>
 
 <script setup>
-
         const imgProps = defineProps({
             src: {
                 type : String,
@@ -25,6 +24,7 @@
                 default : "460"
             },
         })
+
 
 </script>
 

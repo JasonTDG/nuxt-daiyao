@@ -6,34 +6,34 @@
             </div>
             <div class="grid container">
                 <div class="grid_item">
-                        <img class="image " src="~/assets/image/1.jpg">
+                        <img class="image " src="/image/1.jpg">
                 </div>
                 <div class="grid_item">
-                        <img class="image " src="~/assets/image/2.jpg">
+                        <img class="image " src="/image/2.jpg">
                 </div>
                 <div class="grid_item">
-                        <img class="image " src="~/assets/image/3.jpg">
+                        <img class="image " src="/image/3.jpg">
                 </div>
                 <div class="grid_item">
-                        <img class="image " src="~/assets/image/4.jpg">
+                        <img class="image " src="/image/4.jpg">
                 </div>
                 <div class="grid_item">
-                        <img class="image" src="~/assets/image/5.jpg">
+                        <img class="image" src="/image/5.jpg">
                 </div>
                 <div class="grid_item">
-                        <img class="image" src="~/assets/image/6.jpg">
+                        <img class="image" src="/image/6.jpg">
                 </div>
                 <div class="grid_item">
-                        <img class="image" src="~/assets/image/7.jpg">
+                        <img class="image" src="/image/7.jpg">
                 </div>
                 <div class="grid_item">
-                        <img class="image" src="~/assets/image/8.jpg">
+                        <img class="image" src="/image/8.jpg">
                 </div>
                 <div class="grid_item">
-                        <img class="image " src="~/assets/image/9.jpg">
+                        <img class="image " src="/image/9.jpg">
                 </div>
                 <div class="grid_item">
-                        <img class="image " src="~/assets/image/10.jpg">
+                        <img class="image " src="/image/10.jpg">
                 </div>
             </div>
         </div>
@@ -48,14 +48,17 @@
 <style lang="scss" scoped>
             .work_content{
             .grid{
+                column-count: 3;
                 padding-top: 60px;
+                @include max-screen(991px){
+                    column-count: 2;  
+                }
+                @include max-screen(767px){
+                    column-count: 1;  
+                }
                 .grid_item{
-                    width: 33.3333%;
-                    padding: 15px;
-                    @include max-screen(767px){
-                        width: 50%;
-                        padding: 8px;
-                    }
+                    width: 100%;
+                    padding: 10px;
                     .image{
                         width: 100%;
                         border-radius: 3px;

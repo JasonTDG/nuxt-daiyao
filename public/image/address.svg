@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="address" transform="translate(-1180 -769.257)">
+    <circle id="椭圆_9" data-name="椭圆 9" cx="16" cy="16" r="16" transform="translate(1180 769.257)" fill="#14375b"/>
+    <g id="google_map" transform="translate(1120.086 777.884)">
+      <g id="组_20" data-name="组 20" transform="translate(70.573)">
+        <path id="路径_30" data-name="路径 30" d="M75.914,0a5.347,5.347,0,0,0-5.341,5.341c0,3.655,4.78,9.02,4.983,9.247a.481.481,0,0,0,.716,0c.2-.227,4.983-5.592,4.983-9.247A5.347,5.347,0,0,0,75.914,0Zm0,8.028A2.687,2.687,0,1,1,78.6,5.341,2.69,2.69,0,0,1,75.914,8.028Z" transform="translate(-70.573 0)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

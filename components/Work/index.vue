@@ -1,5 +1,5 @@
 <template>
-    <innerBanner  src="_nuxt/assets/image/work_banner.jpg" alt="工程展示" width="1920" height="460"/>
+    <innerBanner src="/image/work_banner.jpg" alt="工程展示" width="1920" height="460"/>
     <content />
 </template>
 

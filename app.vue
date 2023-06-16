@@ -8,7 +8,7 @@
 
 <script setup>
     useHead({
-      title: 'My App',
+      title: 'Vue-Daiyao',
       meta: [
         { name: 'description', content: 'My amazing site.' }
       ],

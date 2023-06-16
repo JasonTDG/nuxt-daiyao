@@ -1,9 +1,9 @@
 <template>
     <header>
-        <div class="nav">
+        <div class="nav" :class="{mobile_mode: isToggled}">
             <div class="logo_box">
                 <NuxtLink class="link" to="/">
-                    <img class="image" src="~/assets/image/logo.png">
+                    <img class="image" src="/image/logo.png">
                     
                 </NuxtLink>    
             </div>
@@ -13,16 +13,16 @@
                         <NuxtLink  class="link" :to="item.link">{{ item.list }}</NuxtLink>
                     </li>
                 </ul>
-                <div class="burger" @click="burgerClick">
+                <div class="burger" :class="{click: isToggled}" @click="mobileMenuToggle">
                     <div class="item"></div>
                     <div class="item"></div>
                     <div class="item"></div>
                 </div>
             </div>
         </div>
-        <div class="mobile_nav">
-            <ul class="mobile_nav_list">
-                <li class="mobile_list" v-for="item of navList.ListBox" :key="item.list">
+        <div class="mobile_nav" :class="{show: isToggled}">
+            <ul class="mobile_nav_list" >
+                <li class="mobile_list" :class="{show: isToggled}" v-for="item of navList.ListBox" :key="item.list">
                     <NuxtLink  class="link" :to="item.link">{{ item.list }}</NuxtLink>
                 </li>
             </ul>
@@ -32,29 +32,23 @@
 
 <script setup>
    import navList from '~/assets/json/navList.json'
+    
+    let isToggled = ref(false);
+    const route = useRoute();
 
-   const burgerClick = () => {
-        const burger = document.querySelector('.burger');
-        const item1 = document.querySelector('.burger .item:nth-child(1)');
-        const item2 = document.querySelector('.burger .item:nth-child(2)');
-        const item3 = document.querySelector('.burger .item:nth-child(3)');
-        const bodyContent = document.querySelector('.body_content');
-        const nav = document.querySelector('.nav');
-        const mobileNav = document.querySelector('.mobile_nav');
-        const mobileList = document.querySelector('.mobile_nav .mobile_list');
+   const mobileMenuToggle = () => {
 
-        burger.classList.toggle('click');
-        item1.classList.toggle('line1');
-        item2.classList.toggle('line2');
-        item3.classList.toggle('line3');
+        isToggled.value = !isToggled.value;
+   };
 
-        bodyContent.classList.toggle('hidden');
+   
+    watch(
+        () => route.value,
+        () => {
+            mobileMenuToggle();
+        }
+    );
 
-        nav.classList.toggle('mobile_mode');
-
-        mobileNav.classList.toggle('show');
-        mobileList.classList.toggle('show');
-   }
 </script>
 
 <style lang="scss" scoped>
@@ -173,6 +167,15 @@
                     &.click{
                         .item{
                             background-color: #fff;
+                            &:nth-child(1){
+                                transform: rotate(-45deg) translate(-5px,6px);
+                            }
+                            &:nth-child(2){
+                                opacity: 0;
+                            }
+                            &:nth-child(3){
+                                transform: rotate(45deg) translate(-5px,-6px);
+                            }
                         }
                     }
                     @include max-screen(991px){
@@ -184,15 +187,7 @@
                         background-color: $main_color;
                         margin: 5px;
                         border-radius: 10px;
-                        &.line1{
-                            transform: rotate(-45deg) translate(-5px,6px);
-                        }
-                        &.line2{
-                            opacity: 0;
-                        }
-                        &.line3{
-                            transform: rotate(45deg) translate(-5px,-6px);
-                        }
+                        @extend %link_hover;
                     }
                     
                 }
@@ -215,8 +210,8 @@
             }
             &.show{
                 position: fixed;
-            opacity: 1;
-            z-index: 999;
+                opacity: 1;
+                z-index: 999;
             }
             .mobile_nav_list{
                 text-align: center;
