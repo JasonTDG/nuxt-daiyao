@@ -5,7 +5,7 @@
 
 <script setup>
     import content from './content.vue'
-    import innerBanner from '../InnerBanner/index.vue'
+    // import innerBanner from '../InnerBanner/index.vue'
 </script>
 
 <style lang="scss" scoped>

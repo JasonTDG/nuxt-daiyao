@@ -1,10 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 
-   ssr: true,
-    // app: {
-    //   baseURL: '/nuxt-daiyao/' // baseURL: '/<repository>/'
-    // },
+    ssr: true,
+    app: {
+        baseURL: process.env.NODE_ENV === 'production' ? '/nuxt-daiyao/' : '/',
+        buildAssetsDir: '/static/'
+    },
     // modules: [
     //     '@nuxtjs/style-resources',
     // ],
@@ -13,7 +14,7 @@ export default defineNuxtConfig({
         css: {
           preprocessorOptions: {
             scss: {
-              additionalData: '@import "@/assets/scss/style.scss";'
+              additionalData: '@import "~/assets/scss/style.scss";'
             }
           }
         }
