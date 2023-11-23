@@ -1,0 +1,24 @@
+{
+    "innerBanner": [
+        {
+            "key": "about",
+            "alt": "公司簡介",
+            "imgSrc": "https://jasontdg.github.io/nuxt-daiyao/image/about_banner.jpg"
+        },
+        {
+            "key": "serviceList",
+            "alt": "服務項目",
+            "imgSrc": "https://jasontdg.github.io/nuxt-daiyao/image/service_banner.jpg"
+        },
+        {
+            "key": "work",
+            "alt": "工程展示",
+            "imgSrc": "https://jasontdg.github.io/nuxt-daiyao/image/work_banner.jpg"
+        },
+        {
+            "key": "contact",
+            "alt": "聯絡我們",
+            "imgSrc": "https://jasontdg.github.io/nuxt-daiyao/image/contact_banner.jpg"
+        }
+    ]
+}

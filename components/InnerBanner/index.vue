@@ -1,29 +1,44 @@
 <template>
     <div class="inner_banner">
-        <img class="image" :src="imgProps.src" :alt="imgProps.alt" :width="imgProps.width" :height="imgProps.height">
+        <img class="image" :src="imgSrc" :alt="alt" width="1920" height="460">
     </div>
     
 </template>
 
 <script setup>
-        const imgProps = defineProps({
-            src: {
-                type : String,
-                default : ""
-            },
-            alt: {
-                type : String,
-                default : ""
-            },
-            width: {
-                type : String,
-                default : "1920"
-            },
-            height: {
-                type : String,
-                default : "460"
-            },
-        })
+    import innerBannerData from '~/assets/json/innerBanner.json'
+
+    const route = useRoute()
+    const imgSrc = ref("")
+    const alt = ref("")
+    const data = innerBannerData.innerBanner
+
+    for( let i = 0; i < data.length; i++ ) {
+        if(data[i].key == route.name) {
+            
+            imgSrc.value = data[i].imgSrc
+            alt.value = data[i].alt
+        }
+    }
+
+        // const imgProps = defineProps({
+        //     src: {
+        //         type : String,
+        //         default : ""
+        //     },
+        //     alt: {
+        //         type : String,
+        //         default : ""
+        //     },
+        //     width: {
+        //         type : String,
+        //         default : "1920"
+        //     },
+        //     height: {
+        //         type : String,
+        //         default : "460"
+        //     },
+        // })
 
 
 </script>
