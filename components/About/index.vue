@@ -1,5 +1,5 @@
 <template>
-    <innerBanner />
+    <InnerBanner />
     <content/>
 </template>
 
